@@ -28,3 +28,12 @@ function acrecentaZero(zero) {
 // Intervalos
 setInterval(comecaRelogio, 1000);
 comecaRelogio();
+
+// Evento no relógio para ela aparecer e desaparecer
+document.querySelector('.mostra-relogio').addEventListener('click', () => {
+    if(document.querySelector('.relogio').style.display == 'none') {
+        document.querySelector('.relogio').style.display = 'flex';
+    } else {
+        document.querySelector('.relogio').style.display = 'none';
+    }
+});
